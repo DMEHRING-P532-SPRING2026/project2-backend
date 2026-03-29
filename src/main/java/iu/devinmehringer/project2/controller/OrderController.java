@@ -94,4 +94,9 @@ public class OrderController {
                 .map(CommandRecordMapper::toDTO)
                 .collect(Collectors.toList()));
     }
+
+    @GetMapping("/")
+    public ResponseEntity<String> root() {
+        return ResponseEntity.ok("API is running");
+    }
 }
