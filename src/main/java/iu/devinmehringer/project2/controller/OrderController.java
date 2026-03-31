@@ -21,6 +21,7 @@ public class OrderController {
     private static class OrderMapper{
         public static OrderResponse toDTO(Order order) {
             OrderResponse orderResponse = new OrderResponse();
+            orderResponse.setId(order.getId());
             orderResponse.setType(order.getType());
             orderResponse.setPatient(order.getPatient());
             orderResponse.setClinician(order.getClinician());

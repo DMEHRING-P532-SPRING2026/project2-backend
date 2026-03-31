@@ -7,6 +7,7 @@ import iu.devinmehringer.project2.model.order.Type;
 import java.time.LocalDateTime;
 
 public class OrderResponse {
+    private long id;
     private Type type;
     private String patient;
     private String clinician;
@@ -78,5 +79,13 @@ public class OrderResponse {
 
     public void setLastModifiedAt(LocalDateTime lastModifiedAt) {
         this.lastModifiedAt = lastModifiedAt;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }
